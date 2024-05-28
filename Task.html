@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout-1</title>
+<style>
+
+.main{
+    display:grid;
+    background-color: lightcyan;
+    padding:20px;
+    grid-template-columns: 50px 50px 50px;
+    gap:2px;
+    font-size: 30px;
+    justify-content: center;
+
+}
+.class{
+    background-color: greenyellow;
+    justify-content: center;
+    display: grid;
+}
+.cd6{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.cd1{
+    background-color: lightgreen;
+}
+.cd2{
+    background-color: yellow;
+}
+.cd3{
+    background-color: blanchedalmond;
+}
+.cd4{
+    background-color: lightskyblue;
+}
+.cd5{
+    background-color: lightpink;
+}
+
+
+
+
+
+
+.main1{
+background-color:lightgrey;
+display: grid;
+padding: 10px;
+grid-template-columns: 100px 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+gap: 5px;
+justify-content: center;
+}
+.child1{
+    background-color: aqua;
+}
+.gcd1{
+    grid-row: 1/4;
+    background-color: greenyellow;
+}
+.gcd2{
+grid-column: 2/4;
+background-color: greenyellow;
+}
+.gcd6{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: greenyellow;
+}
+.gcd5{
+    grid-row-start: 2;
+    background-color:orange;
+}
+.gcd4{
+    grid-row-start: 2;
+    background-color:orangered;
+}
+
+.gcd7{
+
+    background-color:orange;
+}
+
+.gcd8{
+
+    background-color:orangered;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="main">
+
+<div class="class cd1">A</div>
+<div class="class cd2">B</div>
+<div class="class cd3">D</div>
+<div class="class cd4">E</div>
+<div class="class cd5">F</div>
+<div class="class cd6">C</div>
+
+    </div>
+
+<br><br>
+
+<div class="main1">
+
+
+<div class="child1 gcd1">1</div>
+<div class="child1 gcd2">2</div>
+<div class="child1 gcd3">3</div>
+<div class="child1 gcd4">4</div>
+<div class="child1 gcd5">5</div>
+<div class="child1 gcd6">6</div>
+<div class="child1 gcd7">7</div>
+<div class="child1 gcd8">8</div>
+
+
+</div>
+
+</body>
+</html>
